@@ -14,6 +14,10 @@ return {
       "coc-yank",
       "coc-tslint-plugin",
       "coc-snippets",
+      "coc-python",
+      "coc-go",
+      "coc-clangd",
+      "coc-omnisharp",
     }
 
     local keyset = vim.keymap.set

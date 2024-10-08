@@ -18,6 +18,8 @@ return {
       "coc-go",
       "coc-clangd",
       "coc-omnisharp",
+      "coc-kotlin",
+      "coc-java",
     }
 
     local keyset = vim.keymap.set

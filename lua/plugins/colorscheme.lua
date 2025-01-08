@@ -9,7 +9,7 @@ return {
         style = "night", -- Opciones: "storm", "moon", "night", "day"
         transparent = false,
       })
-      vim.cmd([[colorscheme tokyonight]])
+      -- vim.cmd([[colorscheme tokyonight]])
     end,
   },
 
@@ -35,6 +35,7 @@ return {
       require("dracula").setup({
         transparent_bg = true,
       })
+      vim.cmd([[colorscheme dracula]])
     end,
   },
 

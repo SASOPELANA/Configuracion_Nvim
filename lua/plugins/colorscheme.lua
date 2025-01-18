@@ -35,7 +35,7 @@ return {
       require("dracula").setup({
         transparent_bg = true,
       })
-      vim.cmd([[colorscheme dracula]])
+      -- vim.cmd([[colorscheme dracula]])
     end,
   },
 
@@ -70,6 +70,11 @@ return {
   -- Kaganagawa Themes
   {
     "rebelot/kanagawa.nvim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      vim.cmd.colorscheme("kanagawa")
+    end,
   },
 
   -- Monakai Pro

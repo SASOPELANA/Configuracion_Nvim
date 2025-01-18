@@ -30,7 +30,7 @@ return {
   -- Tema Dracula
   {
     "Mofiqul/dracula.nvim",
-    lazy = true, -- Solo cargar cuando sea necesario
+    lazy = false, -- Solo cargar cuando sea necesario
     config = function()
       require("dracula").setup({
         transparent_bg = true,

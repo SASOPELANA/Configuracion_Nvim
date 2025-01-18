@@ -21,7 +21,7 @@ return {
       "python",
       "cpp",
       "c_sharp",
-      "angular",
+      "astro",
     },
     highlight = {
       enable = true,

@@ -4,9 +4,11 @@
 
 -- Marcar errores y no marcarlos
 -- comando <leader>ud  (espacio + ud) para activar el diagnostic
-vim.diagnostic.disable()
-vim.diagnostic.config({
-  virtual_text = false,
-  signs = false,
-  underline = false,
-})
+--
+--vim.diagnostic.disable()
+--vim.diagnostic.config({
+-- virtual_text = false,
+--  signs = false,
+--  underline = false,
+-- })
+--

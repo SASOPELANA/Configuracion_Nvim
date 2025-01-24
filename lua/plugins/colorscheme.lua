@@ -35,7 +35,7 @@ return {
       require("dracula").setup({
         transparent_bg = true,
       })
-      -- vim-cmd([[colorscheme dracula]])
+      vim.cmd([[colorscheme dracula]])
     end,
   },
 
@@ -125,7 +125,7 @@ return {
         -- ...
       })
 
-      vim.cmd("colorscheme github_dark")
+      -- vim.cmd("colorscheme github_dark")
     end,
   },
 }

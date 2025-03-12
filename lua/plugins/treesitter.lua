@@ -26,6 +26,7 @@ return {
     highlight = {
       enable = true,
       use_languagetree = true,
+      --disable = { "comment" },
     },
     refactor = {
       highlight_definitions = {

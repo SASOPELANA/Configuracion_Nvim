@@ -37,6 +37,10 @@ return {
       astro = { enable = true }, -- Habilitar astro
       tailwindcss = { enable = true },
       -- ... otros lenguajes y herramientas
+      harper_ls = false, -- desactivar coemntarios de harper lsp
+      -- configurar harper_ls para correcion de coemntarios en espanol
     },
   },
 }
+
+-- hola progmacion

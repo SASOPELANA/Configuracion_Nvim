@@ -37,10 +37,8 @@ return {
       astro = { enable = true }, -- Habilitar astro
       tailwindcss = { enable = true },
       -- ... otros lenguajes y herramientas
-      harper_ls = false, -- desactivar coemntarios de harper lsp
-      -- configurar harper_ls para correcion de coemntarios en espanol
+      harper_ls = false, -- Desactivar comentarios de harper lsp
+      -- Harper lps, no tiene soporté para el español es-ES, segun la documentación oficial.
     },
   },
 }
-
--- hola progmacion

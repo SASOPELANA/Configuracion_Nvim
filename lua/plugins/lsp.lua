@@ -27,7 +27,7 @@ return {
       omnisharp = { enable = true }, -- Habilitar omnisharp para C#
       clangd = { enable = true }, -- Habilitar clangd para C++
       cssls = { enable = true }, -- Habilitar cssls para CSS
-      html = { enable = true, filetypes = { "html", "ejs" } }, -- Habilitar html para HTML. Permitiendo autocompletado y sugerencias de HTML dentro de archivos .ejs
+      html = { enable = true }, -- Habilitar html para HTML.
       jsonls = { enable = true }, -- Habilitar jsonls para JSON
       lua_ls = { enable = true }, -- Habilitar lua_ls para Lua
       rust_analyzer = { enable = true }, -- Habilitar rust_analyzer para Rust

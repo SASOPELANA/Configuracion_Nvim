@@ -88,6 +88,7 @@ return {
         ["public"] = { glyph = "󱁽 ", hl = "MiniIconsPublic" },
         ["contents"] = { glyph = "󰲂 ", hl = "MiniIconsPublic" },
         ["content"] = { glyph = "󰲂 ", hl = "MiniIconsPublic" },
+        ["data"] = { glyph = "󱋣  ", hl = "MiniIconsYellow" },
       },
 
       -- Configuración opcional: función para controlar extensiones

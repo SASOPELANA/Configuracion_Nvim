@@ -20,5 +20,6 @@ vim.api.nvim_create_autocmd("ColorScheme", {
     vim.api.nvim_set_hl(0, "MiniIconsRepo", { fg = "#64a528" })
     vim.api.nvim_set_hl(0, "MiniIconsI18n", { fg = "#847fe2" })
     vim.api.nvim_set_hl(0, "MiniIconsScript", { fg = "#658794" })
+    vim.api.nvim_set_hl(0, "MiniIconsPublic", { fg = "#4ceaef" })
   end,
 })

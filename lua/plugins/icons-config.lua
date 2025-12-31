@@ -85,6 +85,7 @@ return {
         ["i18n"] = { glyph = "󰀺  ", hl = "MiniIconsI18n" },
         ["scripts"] = { glyph = "󱧶 ", hl = "MiniIconsScript" },
         ["script"] = { glyph = "󱧶 ", hl = "MiniIconsScript" },
+        ["public"] = { glyph = "󱁽 ", hl = "MiniIconsPublic" },
       },
 
       -- Configuración opcional: función para controlar extensiones

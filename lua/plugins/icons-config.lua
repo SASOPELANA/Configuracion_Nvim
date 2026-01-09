@@ -17,13 +17,14 @@ return {
         env = { glyph = " ", hl = "MiniIconsYellow" },
         http = { glyph = "󰖟 ", hl = "MiniIconsRed" },
         sh = { glyph = "󰆍 ", hl = "MiniIconsSh" },
+        ejs = { glyph = " ", hl = "MiniIconsOrange" },
       },
       -- Puedes seguir configurando otras categorías si lo necesitas:
       filetype = {
         -- Aquí irían personalizaciones para tipos como 'lua', 'python', etc.
       },
       file = {
-        [".keep"] = { glyph = "󰊢", hl = "MiniIconsOrange" },
+        [".keep"] = { glyph = "󰊢 ", hl = "MiniIconsOrange" },
         ["devcontainer.json"] = { glyph = "", hl = "MiniIconsAzure" },
         [".env"] = { glyph = " ", hl = "MiniIconsYellow" },
       },
@@ -89,6 +90,7 @@ return {
         ["contents"] = { glyph = "󰲂 ", hl = "MiniIconsPublic" },
         ["content"] = { glyph = "󰲂 ", hl = "MiniIconsPublic" },
         ["data"] = { glyph = "󱋣  ", hl = "MiniIconsYellow" },
+        ["ui"] = { glyph = "󰚝 ", hl = "MiniIconsPurple" },
       },
 
       -- Configuración opcional: función para controlar extensiones

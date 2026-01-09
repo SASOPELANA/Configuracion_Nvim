@@ -36,7 +36,7 @@ return {
       require("dracula").setup({
         transparent_bg = true,
       })
-      -- vim.cmd([[colorscheme dracula]])
+      --vim.cmd([[colorscheme dracula]])
     end,
   },
 
@@ -46,7 +46,7 @@ return {
     lazy = true,
     priority = 1000,
     config = function()
-      -- vim.cmd.colorscheme("andromeda") -- habilitar por defecto
+      --vim.cmd.colorscheme("andromeda") -- habilitar por defecto
     end,
   },
 
@@ -64,7 +64,7 @@ return {
   -- Ciber Dream
   {
     "scottmckendry/cyberdream.nvim",
-    lazy = false,
+    lazy = true,
     priority = 1000,
     config = function()
       -- vim.cmd.colorscheme("cyberdream") -- habilitar por defecto
@@ -77,7 +77,7 @@ return {
     lazy = true,
     priority = 1000,
     config = function()
-      vim.cmd.colorscheme("kanagawa") -- habilitar por defecto
+      --vim.cmd.colorscheme("kanagawa") -- habilitar por defecto
     end,
   },
 
@@ -87,7 +87,7 @@ return {
     lazy = true,
     priority = 1000,
     config = function()
-      -- vim.cmd.colorscheme("monokai-pro") -- habilitar por defecto
+      --vim.cmd.colorscheme("monokai-pro") -- habilitar por defecto
     end,
   },
 

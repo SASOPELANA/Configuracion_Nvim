@@ -91,6 +91,17 @@ return {
         ["content"] = { glyph = "󰲂 ", hl = "MiniIconsPublic" },
         ["data"] = { glyph = "󱋣  ", hl = "MiniIconsYellow" },
         ["ui"] = { glyph = "󰚝 ", hl = "MiniIconsPurple" },
+        ["common"] = { glyph = "󰝉 ", hl = "MiniIconsPurple" },
+        ["decorators"] = { glyph = "󰉗 ", hl = "MiniIconsPurple" },
+        ["decorator"] = { glyph = "󰉗 ", hl = "MiniIconsPurple" },
+        ["interfaces"] = { glyph = "󰲂 ", hl = "MiniIconsTs" },
+        ["interface"] = { glyph = "󰲂 ", hl = "MiniIconsTs" },
+        ["enums"] = { glyph = "󰲂 ", hl = "MiniIconsEnum" },
+        ["enum"] = { glyph = "󰲂 ", hl = "MiniIconsEnum" },
+        ["constants"] = { glyph = " ", hl = "MiniIconsGrey" },
+        ["constant"] = { glyph = " ", hl = "MiniIconsGrey" },
+        ["guards"] = { glyph = "󰉑 ", hl = "MiniIconsGreen" },
+        ["guard"] = { glyph = "󰉑 ", hl = "MiniIconsGreen" },
       },
 
       -- Configuración opcional: función para controlar extensiones

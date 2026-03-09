@@ -21,5 +21,7 @@ vim.api.nvim_create_autocmd("ColorScheme", {
     vim.api.nvim_set_hl(0, "MiniIconsI18n", { fg = "#847fe2" })
     vim.api.nvim_set_hl(0, "MiniIconsScript", { fg = "#658794" })
     vim.api.nvim_set_hl(0, "MiniIconsPublic", { fg = "#4ceaef" })
+    vim.api.nvim_set_hl(0, "MiniIconsCommon", { fg = "#802e9b" })
+    vim.api.nvim_set_hl(0, "MiniIconsEnum", { fg = "#1bac94" })
   end,
 })

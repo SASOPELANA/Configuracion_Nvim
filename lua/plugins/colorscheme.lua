@@ -2,12 +2,12 @@ return {
   -- Tema Tokyo Night
   {
     "folke/tokyonight.nvim",
-    lazy = true, -- <- solo se carga si lo pedís
+    lazy = false, -- <- solo se carga si lo pedís
     priority = 1000, -- Asegurarse de que el tema se carga primero
     config = function()
       require("tokyonight").setup({
         style = "night", -- Opciones: "storm", "moon", "night", "day"
-        transparent = false,
+        transparent = true,
       })
       -- vim.cmd([[colorscheme tokyonight]])
     end,
@@ -17,7 +17,7 @@ return {
   {
     "catppuccin/nvim",
     name = "catppuccin",
-    lazy = true,
+    lazy = false,
     priority = 1000,
     config = function()
       require("catppuccin").setup({
@@ -30,11 +30,11 @@ return {
   -- Tema Dracula
   {
     "Mofiqul/dracula.nvim",
-    lazy = true, -- Solo cargar cuando sea necesario
+    lazy = false, -- Solo cargar cuando sea necesario
     priority = 1000,
     config = function()
       require("dracula").setup({
-        transparent_bg = true,
+        transparent_bg = false,
       })
       --vim.cmd([[colorscheme dracula]])
     end,
@@ -42,18 +42,22 @@ return {
 
   -- Andormeda
   {
-    "safv12/andromeda.vim",
-    lazy = true,
+    "nobbmaestro/nvim-andromeda",
+    dependencies = { "tjdevries/colorbuddy.nvim" },
     priority = 1000,
+    lazy = false,
     config = function()
-      --vim.cmd.colorscheme("andromeda") -- habilitar por defecto
+      require("andromeda").setup({
+        preset = "andromeda",
+      })
+      vim.cmd([[colorscheme andromeda]])
     end,
   },
 
   -- aura theme
   {
     "baliestri/aura-theme",
-    lazy = true,
+    lazy = false,
     priority = 1000,
     config = function(plugin)
       vim.opt.rtp:append(plugin.dir .. "/packages/neovim")
@@ -64,7 +68,7 @@ return {
   -- Ciber Dream
   {
     "scottmckendry/cyberdream.nvim",
-    lazy = true,
+    lazy = false,
     priority = 1000,
     config = function()
       -- vim.cmd.colorscheme("cyberdream") -- habilitar por defecto
@@ -74,7 +78,7 @@ return {
   -- Kaganagawa Themes
   {
     "rebelot/kanagawa.nvim",
-    lazy = true,
+    lazy = false,
     priority = 1000,
     config = function()
       --vim.cmd.colorscheme("kanagawa") -- habilitar por defecto
@@ -84,17 +88,17 @@ return {
   -- Monakai Pro
   {
     "loctvl842/monokai-pro.nvim",
-    lazy = true,
+    lazy = false,
     priority = 1000,
     config = function()
-      --vim.cmd.colorscheme("monokai-pro") -- habilitar por defecto
+      -- vim.cmd.colorscheme("monokai-pro-classic") -- habilitar por defecto
     end,
   },
 
   -- Nigh Fox Theme
   {
     "EdenEast/nightfox.nvim",
-    lazy = true,
+    lazy = false,
     priority = 1000,
     config = function()
       -- vim.cmd.colorscheme("nightfox") -- habilitar por defecto
@@ -104,7 +108,7 @@ return {
   -- OneDark theme
   {
     "navarasu/onedark.nvim",
-    lazy = false,
+    lazy = true,
     priority = 1000, -- make sure to load this before all the other start plugins
     config = function()
       require("onedark").setup({
@@ -118,7 +122,7 @@ return {
   -- Solorize Osaka
   {
     "craftzdog/solarized-osaka.nvim",
-    lazy = true,
+    lazy = false,
     priority = 1000,
     config = function()
       -- vim.cmd.colorscheme("solarized-osaka")
@@ -129,7 +133,7 @@ return {
   {
     "projekt0n/github-nvim-theme",
     name = "github-theme",
-    lazy = true, -- make sure we load this during startup if it is your main colorscheme
+    lazy = false, -- make sure we load this during startup if it is your main colorscheme
     priority = 1000, -- make sure to load this before all the other start plugins
     config = function()
       require("github-theme").setup({

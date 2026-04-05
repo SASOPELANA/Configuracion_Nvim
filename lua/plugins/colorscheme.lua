@@ -22,7 +22,7 @@ return {
     config = function()
       require("catppuccin").setup({
         flavour = "mocha", -- Opciones: "latte", "frappe", "macchiato", "mocha"
-        transparent_background = false,
+        transparent_background = true,
       })
     end,
   },
@@ -45,12 +45,12 @@ return {
     "nobbmaestro/nvim-andromeda",
     dependencies = { "tjdevries/colorbuddy.nvim" },
     priority = 1000,
-    lazy = false,
+    lazy = true,
     config = function()
       require("andromeda").setup({
         preset = "andromeda",
       })
-      vim.cmd([[colorscheme andromeda]])
+      --vim.cmd([[colorscheme andromeda]])
     end,
   },
 
@@ -81,7 +81,7 @@ return {
     lazy = false,
     priority = 1000,
     config = function()
-      --vim.cmd.colorscheme("kanagawa") -- habilitar por defecto
+      -- vim.cmd.colorscheme("kanagawa") -- habilitar por defecto
     end,
   },
 
@@ -91,7 +91,56 @@ return {
     lazy = false,
     priority = 1000,
     config = function()
-      -- vim.cmd.colorscheme("monokai-pro-classic") -- habilitar por defecto
+      require("monokai-pro").setup({
+        transparent_background = true,
+        terminal_colors = true,
+        devicons = true,
+        styles = {
+          comment = { italic = true },
+          keyword = { italic = true },
+          type = { italic = true },
+          storageclass = { italic = true },
+          structure = { italic = true },
+          parameter = { italic = true },
+          annotation = { italic = true },
+          tag_attribute = { italic = true },
+        },
+        filter = "classic", -- classic | octagon | pro | machine | ristretto | spectrum
+        day_night = {
+          enable = false,
+          day_filter = "pro",
+          night_filter = "spectrum",
+        },
+        inc_search = "background", -- underline | background
+        background_clear = {
+          "toggleterm",
+          "telescope",
+          "renamer",
+          "notify",
+        },
+        plugins = {
+          bufferline = {
+            underline_selected = false,
+            underline_visible = false,
+            underline_fill = false,
+            bold = true,
+          },
+          indent_blankline = {
+            context_highlight = "default", -- default | pro
+            context_start_underline = false,
+          },
+        },
+        override = function(scheme)
+          return {}
+        end,
+        override_palette = function(filter)
+          return {}
+        end,
+        override_scheme = function(scheme, palette, colors)
+          return {}
+        end,
+      })
+      vim.cmd.colorscheme("monokai-pro-classic") -- habilitar por defecto
     end,
   },
 
@@ -122,10 +171,28 @@ return {
   -- Solorize Osaka
   {
     "craftzdog/solarized-osaka.nvim",
-    lazy = false,
+    lazy = true,
     priority = 1000,
     config = function()
-      -- vim.cmd.colorscheme("solarized-osaka")
+      require("solarized-osaka").setup({
+        transparent = true, -- ✅ Fondo transparente activado
+        terminal_colors = true,
+        styles = {
+          comments = { italic = true },
+          keywords = { italic = true },
+          functions = {},
+          variables = {},
+          sidebars = "dark", -- Los paneles laterales mantienen fondo oscuro
+          floats = "dark", -- Las ventanas flotantes mantienen fondo oscuro
+        },
+        sidebars = { "qf", "help" },
+        day_brightness = 0.3,
+        hide_inactive_statusline = false,
+        dim_inactive = false,
+        lualine_bold = false,
+      })
+
+      --vim.cmd.colorscheme("solarized-osaka")
     end,
   },
 
